@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMATED TELLER MACHINE</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- background -->
+
+    <div class="back">
+        <video src="back.mp4" autoplay loop muted></video>
+    </div>
+
+    <div id="box">
+        <form action="">
+            <h2>RETH BANK LTD</h2>
+            <div class="inputbox">
+                <input type="text" id="user" required="required" placeholder="USERNAME">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" id="pin" required="required" placeholder="PIN">
+                <span>pin</span>
+                <i></i>
+            </div>
+            <div class="links d-flex justify-between">
+                <a href="">Forgot Pin</a>
+            </div>
+            <button onclick="login()" value="LOGIN" type="button">LOGIN</button>
+            <p class="inva" id="invalid"></p>
+        </form>
+    </div>
+
+    <div id="main">
+        <div class="inner">
+            <h2 class="hey">HEY THERE, <span id="welcomeUser"></span> !</h2>
+            <ul class="btns">
+                <li><button onclick="checkBal()" type="button">Check Balance</button></li>
+                <li><button onclick="depo()">Deposit</button></li>
+                <li><button onclick="withd()">Withdraw</button></li>
+                <li><button onclick="exit()">Exit</button></li>
+            </ul>
+            <p id="out"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
